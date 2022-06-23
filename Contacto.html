@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Alelau Cactus</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet"/>
+		<link rel="stylesheet" href="./css/estilos.css">
+        <script src="https://kit.fontawesome.com/123c12248a.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="./img/favicon.png">
+	</head>
+<body>
+		<div class="contenedor2">
+			<header class="header">
+				<div class="logo">
+					<img class="logop" src="./img/logo.png" alt="">
+					<h1>Alelau Cactus</h1>
+				</div>
+				<nav class="menu">
+					<a href="index.html">Inicio</a>
+					<a href="Productos.html">Productos</a>
+					<a href="Informaciones.html">Informaciones</a>
+					<a href="Nosotros.html">Nosotros</a>
+					<a href="Contacto.html">Contacto</a>
+				</nav>
+			</header>
+        
+        <main class="contenido2">
+            <article class="articulo">
+                <div class="contenedor-thumbnail">
+                    <img src="./img/montaña.jpg" alt="">
+                </div>
+                <div class="contenedor-texto">
+                    <form action="form.php" method="post" target="_blank">
+                        <label for="nombre_apellido">Nombre y Apellido:</label>
+                        <input type="text" maxlength="30" name="nombre_apellido" required/></br></br>
+                        <label for="correo_electronico">Correo Electrónico:</label>
+                        <input type="text" maxlength="30" name="correo_electronico" required/></br></br>
+                        <label for="motivo">Motivo:</label>
+                        <input type="text" maxlength="15" name="motivo" required/></br></br>
+                        <span><label for="Mensaje">Mensaje: </label></span>
+                        <textarea name="text" id="mensaje" rows="10" cols="80" required></textarea></br></br>
+                        <input type="submit" value="Enviar datos" class="boton">
+                    </form>
+                </div>
+            </article>
+        </main>
+
+        <footer class="footer">
+            <p>Copyright © 2020 Alelau Savycar</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+    <script src="https://kit.fontawesome.com/123c12248a.js" crossorigin="anonymous"></script>
+    <title>Alelau Cactus</title>
+</head>
+
+<body>
+    <header id="top">
+        <nav class="navbar container">
+            <picture>
+                <img class="logo" src="./images/logo.png" alt="logo">
+            </picture>
+
+        <!--Menú de Navegación
+
+            <ul class="menu">
+                <li class="menu__item">
+                    <a class="menu__link" href="index.html">Inicio</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="Productos.html">Productos</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="Informaciones.html">Informaciones</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="Nosotros.html">Nosotros</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <!--Fin Menú de Navegación
+    </header>
+
+        <!--Listado de iconos
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.2118455116597!2d-58.6228519!3d-34.6493525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7608002c00b%3A0xb2152e40b9de9fa7!2sAv.%20Rivadavia%2018400%2C%20Mor%C3%B3n%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1654714144880!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa__ubicacion"></iframe>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:alesavy@hotmail.com">alesavy@hotmail.com</a>
+            <i class="fa-solid fa-phone-flip"> +54 9 1140683937</i>
+            </div>
+        <!-- Articulo General
+        <section>
+            <article>
+            <h2 class="titulo__contacto">Formulario de Contacto</h2>
+            <div class="formulario">
+            <form action="form.php" method="post" target="_blank">
+                <label for="nombre_apellido">Nombre y Apellido:</label>
+                <input type="text" maxlength="30" name="nombre_apellido" required/>
+                <label for="correo_electronico">Correo Electrónico:</label>
+                <input type="text" maxlength="30" name="correo_electronico" required/></br></br>
+                <label for="motivo">Motivo:</label>
+                <input type="text" maxlength="15" name="motivo" required/></br></br>
+                <span><label for="Mensaje">Mensaje: </label></span>
+                <textarea name="text" id="mensaje" rows="10" cols="60" required></textarea></br></br>
+                <input type="submit" value="Enviar datos" class="boton">
+            </form>
+            </div>
+            </article>
+        </section>
+
+        <!-- Footer
+            <footer>
+                <p>&#169 Alelau 2022 | todos los derechos reservados <a class="inicio" href="Index.html">Al Inicio</p>
+        </footer>
+        </body>
+    </html>
