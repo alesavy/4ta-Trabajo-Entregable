@@ -52,12 +52,39 @@ a {
 .logop {
 	width: 130px;
 	float: left;
-}
+	animation-duration: 2s;
+	animation-name: aparecer;
+	animation-iteration-count: 1;
+ }
+ @keyframes aparecer {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ }
+ 
 
 .logo h1 {
 	font-size: 50px;
 	color: green;
+	animation-duration: 3s;
+	animation-name: slidein;
 }
+  
+  @keyframes slidein {
+	from {
+	  margin-left: 100%;
+	  width: 300%
+	}
+  
+	to {
+	  margin-left: 0%;
+	  width: 100%;
+	}
+}
+
 
 .logo .iniciales-logo {
 	padding: 5px;
@@ -135,14 +162,14 @@ a {
 	line-height: 25px; 
 	font-weight: 300;
 	margin-bottom: 20px; 
-	color: #868b8d;
+	color: gray;
 }
 
 /* ---------- Articulo Destacado ----------*/
 .articulo.destacado {
 	grid-area: destacado;
 	color: white;
-	background-color: #001a4d;
+	background: linear-gradient(to right, yellow, white);
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
@@ -207,7 +234,7 @@ a {
 	text-align: center;
 	min-height: 100px; 
 	grid-area: aside;
-	background: #001a4d;
+	background: linear-gradient(to top, black, blue);
 	color: #868b8d;
 }
 
